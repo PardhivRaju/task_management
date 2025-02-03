@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    margin: 0;
+    padding: 1rem;
+}
+
+/* Task List */
+#task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#task-list div {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#task-list h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+#task-list button {
+    margin: 0.5rem 0.5rem 0 0;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+#task-list button:hover {
+    opacity: 0.9;
+}
+
+#task-list button:first-of-type {
+    background-color: #28a745;
+}
+
+#task-list button:last-of-type {
+    background-color: #dc3545;
+}
+
+/* Add Task Button */
+button {
+    display: block;
+    margin: 1rem auto;
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Modal Styles */
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#modal h2 {
+    margin-top: 0;
+}
+
+#modal label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#modal input, #modal select {
+    width: calc(100% - 2rem);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#modal button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+#modal button:first-of-type {
+    background-color: #007bff;
+}
+
+#modal button:last-of-type {
+    background-color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #task-list div {
+        width: 95%;
+    }
+
+    #modal {
+        width: 90%;
+    }
+}
